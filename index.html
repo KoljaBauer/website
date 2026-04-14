@@ -54,7 +54,7 @@
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <h2>Updates</h2>
                   <ul>
-                    <li><b>February 2026</b> First-author paper on motion reasoning (coming soon) accepted to CVPR  </li>
+                    <li><b>February 2026</b> First-author paper on motion reasoning (<a href="https://compvis.github.io/long-term-motion/">ZipMo</a>) accepted to CVPR  </li>
                     <li><b>February 2025</b> First-author paper on noise-free diffusion features (<a href="https://compvis.github.io/cleandift/">CleanDIFT</a>) accepted to CVPR (as an <font color="red">Oral</font>)  </li>
                     <li><b>October 2024</b> I started my PhD as an <a
                         href="https://ellis.eu/">ELLIS student</a> in the <a href="https://ommer-lab.com/">CompVis lab @ LMU Munich</a>.</li>
@@ -74,6 +74,50 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+            <tr onmouseout="longtermmotion_stop()" onmouseover="longtermmotion_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='longtermmotion_image' style="background-color: #FFFFFF;">
+                    <img src='images/teaser_16_samples_ours.png' width="160" alt="Learning Long-term Motion Embeddings for Efficient Kinematics Generation hover teaser">
+                  </div>
+                  <img src='images/teaser_1_samples_ours.png' width="160" alt="Learning Long-term Motion Embeddings for Efficient Kinematics Generation teaser">
+                </div>
+                <script type="text/javascript">
+                  function longtermmotion_start() {
+                    document.getElementById('longtermmotion_image').style.opacity = "1";
+                  }
+
+                  function longtermmotion_stop() {
+                    document.getElementById('longtermmotion_image').style.opacity = "0";
+                  }
+                  longtermmotion_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://compvis.github.io/long-term-motion/">
+                  <span class="papertitle">Learning Long-term Motion Embeddings for Efficient Kinematics Generation</span>
+                </a>
+                <br>
+                <a href="https://nickstracke.dev/">Nick Stracke*</a>,
+                <strong>Kolja Bauer*</strong>,
+                <a href="https://stefan-baumann.eu/">Stefan Andreas Baumann</a>,
+                Miguel Angel Bautista,
+                Josh Susskind,
+                <a href="https://ommer-lab.com/people/ommer/">Björn Ommer</a>
+                <br>
+                <em>CVPR, 2026</em>
+                <br>
+                <a href="https://compvis.github.io/long-term-motion/">Project Page</a>
+                /
+                <a href="https://arxiv.org/abs/2604.11737">arXiv</a>
+                /
+                <a href="https://github.com/CompVis/long-term-motion">Code</a>
+                <p></p>
+                <p>
+                  A learned long-term motion space enables efficient, goal-conditioned kinematics generation without full video synthesis.
+                </p>
+              </td>
+            </tr>
 
             <tr onmouseout="cleandift_stop()" onmouseover="cleandift_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
