@@ -54,6 +54,7 @@
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <h2>Updates</h2>
                   <ul>
+                    <li><b>June 2026</b> First-author paper on inferring visual concepts from image sets (<a href="https://arxiv.org/abs/2607.02402">VICIS</a>) accepted to ECCV</li>
                     <li><b>February 2026</b> First-author paper on motion reasoning (<a href="https://compvis.github.io/long-term-motion/">ZipMo</a>) accepted to CVPR  </li>
                     <li><b>February 2025</b> First-author paper on noise-free diffusion features (<a href="https://compvis.github.io/cleandift/">CleanDIFT</a>) accepted to CVPR (as an <font color="red">Oral</font>)  </li>
                     <li><b>October 2024</b> I started my PhD as an <a
@@ -73,6 +74,50 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+
+            <tr onmouseout="vicis_stop()" onmouseover="vicis_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='vicis_image' style="background-color: #FFFFFF; text-align: center;">
+                    <img src='images/vicis_results.jpg' width="123" style="padding-top: 20px;" alt="VICIS hover teaser">
+                  </div>
+                  <img src='images/vicis.jpg' width="160" style="padding-top: 20px;" alt="VICIS teaser">
+                </div>
+                <script type="text/javascript">
+                  function vicis_start() {
+                    document.getElementById('vicis_image').style.opacity = "1";
+                  }
+
+                  function vicis_stop() {
+                    document.getElementById('vicis_image').style.opacity = "0";
+                  }
+                  vicis_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2607.02402">
+                  <span class="papertitle">Show Me Examples: Inferring Visual Concepts from Image Sets</span>
+                </a>
+                <strong>(VICIS)</strong>
+                <br>
+                <a href="https://nickstracke.dev/">Nick Stracke*</a>,
+                <strong>Kolja Bauer*</strong>,
+                <a href="https://stefan-baumann.eu/">Stefan Andreas Baumann</a>,
+                Miguel Angel Bautista,
+                Josh Susskind,
+                <a href="https://ommer-lab.com/people/ommer/">Björn Ommer</a>
+                <br>
+                <em>ECCV, 2026</em>
+                <br>
+                <a href="https://arxiv.org/abs/2607.02402">arXiv</a>
+                /
+                <a href="https://github.com/CompVis/set-learner">Code</a>
+                <p></p>
+                <p>
+                  Inferring shared visual concepts from sets of example images and applying them to new query inputs.
+                </p>
+              </td>
+            </tr>
 
             <tr onmouseout="longtermmotion_stop()" onmouseover="longtermmotion_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
